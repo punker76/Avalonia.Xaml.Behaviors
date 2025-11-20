@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,44 @@
         <article data-uid="">
 <h1 id="showbehaviorbase">ShowBehaviorBase</h1>
 
-<p><em>(Documentation for ShowBehaviorBase is coming soon)</em></p>
+<p>Base class for behaviors that show a control in response to an event.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TargetControl</td>
+<td><code>Control</code></td>
+<td>Gets or sets the target control to show.</td>
+</tr>
+<tr>
+<td>EventRoutingStrategy</td>
+<td><code>RoutingStrategies</code></td>
+<td>Gets or sets the routing strategy used for the triggering event. Default is <code>Bubble</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Show()</code></td>
+<td>Shows the <code>TargetControl</code> when the behavior is triggered. Returns true if the control was shown.</td>
+</tr>
+</tbody>
+</table>
 
 </article>
 

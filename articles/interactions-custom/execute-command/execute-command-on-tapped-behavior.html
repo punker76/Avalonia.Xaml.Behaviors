@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,16 @@
         <article data-uid="">
 <h1 id="executecommandontappedbehavior">ExecuteCommandOnTappedBehavior</h1>
 
-<p><em>(Documentation for ExecuteCommandOnTappedBehavior is coming soon)</em></p>
+<p>A behavior that executes a command when the control is tapped.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-xml">&lt;Button xmlns=&quot;https://github.com/avaloniaui&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        Content=&quot;Tap Me&quot;&gt;
+    &lt;Interaction.Behaviors&gt;
+        &lt;ExecuteCommandOnTappedBehavior Command=&quot;{Binding TappedCommand}&quot; /&gt;
+    &lt;/Interaction.Behaviors&gt;
+&lt;/Button&gt;
+</code></pre>
 
 </article>
 

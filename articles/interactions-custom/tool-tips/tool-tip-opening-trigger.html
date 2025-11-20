@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,16 @@
         <article data-uid="">
 <h1 id="tooltipopeningtrigger">ToolTipOpeningTrigger</h1>
 
-<p><em>(Documentation for ToolTipOpeningTrigger is coming soon)</em></p>
+<p>Trigger that listens for the <code>ToolTip.ToolTipOpeningEvent</code>.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-xml">&lt;Button Content=&quot;Hover Me&quot; ToolTip.Tip=&quot;I am a tooltip!&quot;&gt;
+    &lt;Interaction.Behaviors&gt;
+        &lt;ToolTipOpeningTrigger&gt;
+            &lt;InvokeCommandAction Command=&quot;{Binding ToolTipOpeningCommand}&quot; /&gt;
+        &lt;/ToolTipOpeningTrigger&gt;
+    &lt;/Interaction.Behaviors&gt;
+&lt;/Button&gt;
+</code></pre>
 
 </article>
 

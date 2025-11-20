@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,17 @@
         <article data-uid="">
 <h1 id="tabcontrolselectionchangedtrigger">TabControlSelectionChangedTrigger</h1>
 
-<p><em>(Documentation for TabControlSelectionChangedTrigger is coming soon)</em></p>
+<p>Executes actions when the associated <code>TabControl</code> changes selection.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-xml">&lt;TabControl&gt;
+    &lt;Interaction.Behaviors&gt;
+        &lt;TabControlSelectionChangedTrigger&gt;
+            &lt;InvokeCommandAction Command=&quot;{Binding TabChangedCommand}&quot; /&gt;
+        &lt;/TabControlSelectionChangedTrigger&gt;
+    &lt;/Interaction.Behaviors&gt;
+    &lt;!-- Tabs --&gt;
+&lt;/TabControl&gt;
+</code></pre>
 
 </article>
 
